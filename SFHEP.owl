@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#"
+     xml:base="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#AOD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#AOD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Dataset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Detector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Detector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Limit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Limit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Plot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Plot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#RECO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#RECO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Raw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Raw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Reconstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Reconstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Researcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Result"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Simulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Simulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Skimming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Skimming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#Result"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
