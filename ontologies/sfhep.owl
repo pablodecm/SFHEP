@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP#"
+     xml:base="http://www.semanticweb.org/pablodecm/ontologies/2014/2/SFHEP"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.purl.org/sfhep"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/sfhep#AOD -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#AOD">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Agent -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Agent"/>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Analysis -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Dataset -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Dataset"/>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Detector -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Detector">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Event -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Event">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Format -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Format">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Limit -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Limit">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Measurement -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Plot -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Plot">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Process -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Process"/>
+    
+
+
+    <!-- http://www.purl.org/sfhep#RECO -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#RECO">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Raw -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Raw">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Reconstruction -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Reconstruction">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Researcher -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Result -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Result"/>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Simulation -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Simulation">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Skimming -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Skimming">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Software -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Software">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep#Value -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep#Value">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep#Result"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
