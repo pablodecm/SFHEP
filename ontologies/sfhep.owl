@@ -76,6 +76,12 @@
     
 
 
+    <!-- http://www.purl.org/sfhep/sfhep#PhysicsAnalysis -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#PhysicsAnalysis"/>
+    
+
+
     <!-- http://www.purl.org/sfhep/sfhep#RAW_DataSet -->
 
     <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#RAW_DataSet">
