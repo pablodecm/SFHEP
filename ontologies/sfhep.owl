@@ -66,6 +66,14 @@
     
 
 
+    <!-- http://www.purl.org/sfhep/sfhep#ElectronPhysicsObject -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#ElectronPhysicsObject">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep/sfhep#PhysicsObject"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.purl.org/sfhep/sfhep#Event -->
 
     <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#Event">
@@ -76,9 +84,31 @@
     
 
 
+    <!-- http://www.purl.org/sfhep/sfhep#MuonPhysicsObject -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#MuonPhysicsObject">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep/sfhep#PhysicsObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/sfhep/sfhep#PhotonPhysicsObject -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#PhotonPhysicsObject">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/sfhep/sfhep#PhysicsObject"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.purl.org/sfhep/sfhep#PhysicsAnalysis -->
 
     <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#PhysicsAnalysis"/>
+    
+
+
+    <!-- http://www.purl.org/sfhep/sfhep#PhysicsObject -->
+
+    <owl:Class rdf:about="http://www.purl.org/sfhep/sfhep#PhysicsObject"/>
     
 
 
